@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Лого */
 .page-header {
-  padding: 24px 0px 25px;
+  /* padding: 24px 0px 25px; */
   margin-bottom: 20px;
 }
 
@@ -72,6 +72,27 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Site nav */
+
+.site-nav{
+  display: flex;
+}
+
+.site-nav li:not(:last-child){
+  margin-right: 50px;
+}
+
+/* Расширяет "область действия" ссылок  */
+.site-nav a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+
+.contacts-nav{
+  display: flex;
+}
+
 .site-nav .link.current {
   color: #2196f3;
 }
@@ -200,7 +221,7 @@ text-align: center;
 /* Footer  */
 
 .footer {
-  padding: 60px 0px;
+  /* padding: 60px 0px; */
 
   background-color: var(--secondary-background-color-dark);
 }
