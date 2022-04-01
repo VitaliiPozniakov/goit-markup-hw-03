@@ -73,11 +73,29 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Site nav */
 
-.site-nav{
+.page-header div {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.site-nav .item:not(:last-child){
+.page-header nav{
+  display: flex;
+  align-items: center;
+  
+}
+/* Аналогично предыдущему правилу */
+/* .container.main-nav {
+  display: flex;
+} */
+
+.site-nav{
+  display: flex;
+  margin-left: 93px;
+  
+}
+
+.site-nav li:not(:last-child){
   margin-right: 50px;
 }
 
@@ -92,6 +110,15 @@ h1, h2, h3, h4, h5, h6, p {
 .contacts-nav{
   display: flex;
 }
+
+/* .contacts-nav li:not(:last-child){
+  margin-right: 50px; */
+}
+
+/* Аналогичный вариант предыдущего селектора */
+/* .contacts-nav .item + .item {
+  margin-right: 50px;
+} */
 
 .site-nav .link.current {
   color: #2196f3;
@@ -115,6 +142,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.contacts-nav .item:not(:last-child){
+  margin-right: 50px;
 }
 
 .contacts-nav .link:focus,
