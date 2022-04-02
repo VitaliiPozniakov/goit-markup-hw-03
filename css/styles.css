@@ -9,33 +9,6 @@
   --logo-black: #000000;
 }
 
-body {
-  color: var(--primary-text-color);
-  background-color: #ffffff;
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin:0 auto;
-}
-
-.list {
-  padding: 0px;
-  margin: 0px;
-
-  list-style: none;
-}
-
 /* Палитра:
 
 Цвет основного текста - #757575
@@ -46,12 +19,42 @@ h1, h2, h3, h4, h5, h6, p {
 Вторичный цвет фона #2F303A
 */
 
+body {
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin:0 auto;
+}
+
+/* Утилиты */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+
+  list-style: none;
+}
+
+
 /* Header */
 
 /* Лого */
 .page-header {
   /* padding: 24px 0px 25px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .logo {
@@ -69,25 +72,23 @@ h1, h2, h3, h4, h5, h6, p {
 
 .logo-white {
   color: var(--primari-white-color);
-}
+  }
 
 /* Site nav */
 
-.page-header div {
+.page-header .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
-.page-header nav{
+.page-header .main-nav{
   display: flex;
   align-items: center;
   
 }
-/* Аналогично предыдущему правилу */
-/* .container.main-nav {
-  display: flex;
-} */
 
 .site-nav{
   display: flex;
@@ -95,30 +96,19 @@ h1, h2, h3, h4, h5, h6, p {
   
 }
 
-.site-nav li:not(:last-child){
+.site-nav .item:not(:last-child){
   margin-right: 50px;
 }
 
 /* Расширяет "область действия" ссылок  */
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+  }
 
 
 .contacts-nav{
   display: flex;
 }
-
-/* .contacts-nav li:not(:last-child){
-  margin-right: 50px; */
-}
-
-/* Аналогичный вариант предыдущего селектора */
-/* .contacts-nav .item + .item {
-  margin-right: 50px;
-} */
 
 .site-nav .link.current {
   color: #2196f3;
@@ -147,6 +137,14 @@ h1, h2, h3, h4, h5, h6, p {
 .contacts-nav .item:not(:last-child){
   margin-right: 50px;
 }
+
+/* Аналогичныеварианты предыдущего селектора */
+/* .contacts-nav li:not(:last-child){
+  margin-right: 50px; */
+}
+/* .contacts-nav .item + .item {
+  margin-right: 50px;
+} */
 
 .contacts-nav .link:focus,
 .contacts-nav .link:hover {
@@ -277,13 +275,18 @@ text-align: center;
 }
 
 
-.adress-list a{
+.contact-list .link, .contact-list .adress
+{
   font-style: normal;
   text-decoration: none;
 }
 
 .contact-list .list-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.contact-list{
+  margin-top: 20px;
 }
 
 /* Стили для portfolio.html */
