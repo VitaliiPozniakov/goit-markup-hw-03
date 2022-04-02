@@ -103,8 +103,8 @@ h1, h2, h3, h4, h5, h6, p {
 /* Расширяет "область действия" ссылок  */
 .site-nav .link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   }
 
 
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 50px;
 }
 
-/* Аналогичныеварианты предыдущего селектора */
+/* Аналогичные варианты предыдущего селектора */
 /* .contacts-nav li:not(:last-child){
   margin-right: 50px; */
 }
@@ -155,8 +155,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* Стили для index.html */
-
-
 
 /* Section */
 
@@ -192,6 +190,7 @@ h1, h2, h3, h4, h5, h6, p {
 padding: 200px 452px;
 background-color: var(--secondary-background-color-dark);
 text-align: center;
+margin-bottom: 94px;
 }
 
 .hero-title {
@@ -210,12 +209,24 @@ text-align: center;
   font-weight:700;
   font-size: 16px;
   line-height: 1.88;
-  text-align:: center;
+  /* text-align:: center; */
   letter-spacing: 0.06em;
   vertical-align: center;
 }
 
 /* Features */
+
+.section .feature-list {
+  display: flex;
+ }
+
+ .feature-item:not(:last-child){
+  margin-right: 50px;
+}
+
+.section.feature {
+  margin-bottom: 94px;
+}
 
 .feature-list .title {
   
@@ -231,9 +242,33 @@ text-align: center;
 
 /* Activities */
 
+.section.activities {
+  margin-bottom: 67px;
+}
+
+.section .activities-list{
+  display: flex;
+}
+
+.activities-item:not(:last-child){
+  margin-right: 30px;
+}
+
 /* Team */
-.team {
+.section.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 27px;
+
   background-color: var(--secondary-background-color-light);
+}
+
+.team-list {
+  display: flex;
+ }
+
+ .team-item:not(:last-child){
+  margin-right: 30px;
 }
 
 .img-team {
@@ -254,7 +289,8 @@ text-align: center;
 /* Footer  */
 
 .footer {
-  /* padding: 60px 0px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: var(--secondary-background-color-dark);
 }
