@@ -103,6 +103,8 @@ h1, h2, h3, h4, h5, h6, p {
 /* Расширяет "область действия" ссылок  */
 .site-nav .link {
   display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
   }
 
 
