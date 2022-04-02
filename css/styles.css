@@ -136,6 +136,11 @@ h1, h2, h3, h4, h5, h6, p {
   text-decoration: none;
 }
 
+.contacts-nav .link:focus,
+.contacts-nav .link:hover {
+  color: var(--accent-color);
+}
+
 .contacts-nav .item:not(:last-child){
   margin-right: 50px;
 }
@@ -148,40 +153,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 50px;
 } */
 
-.contacts-nav .link:focus,
-.contacts-nav .link:hover {
-  color: var(--accent-color);
-}
 
 /* Стили для index.html */
 
-/* Hero */
-.hero {
-padding: 200px 452px;
-background-color: var(--secondary-background-color-dark);
-text-align: center;
-}
 
-.hero-title {
-  margin-bottom: 30px;
-
-  color: var(--primari-white-color);
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  font-weight: 900;
-  }
-
-.button-hero {
-  color: var(--primari-white-color);
-  background-color: var(--accent-color);
-  font-weight:700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align:: center;
-  letter-spacing: 0.06em;
-  vertical-align: center;
-}
 
 /* Section */
 
@@ -212,6 +187,33 @@ text-align: center;
   
 } */
 
+/* Hero */
+.hero {
+padding: 200px 452px;
+background-color: var(--secondary-background-color-dark);
+text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+
+  color: var(--primari-white-color);
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  }
+
+.button-hero {
+  color: var(--primari-white-color);
+  background-color: var(--accent-color);
+  font-weight:700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align:: center;
+  letter-spacing: 0.06em;
+  vertical-align: center;
+}
 
 /* Features */
 
