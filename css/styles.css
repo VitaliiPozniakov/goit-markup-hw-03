@@ -158,10 +158,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Section */
 
-.section.padding {
+/* .section.padding {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 .section .section-title {
   margin-bottom: 50px;
