@@ -21,7 +21,7 @@
 
 body {
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--primari-white-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -31,12 +31,18 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 /* Утилиты */
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -48,7 +54,6 @@ h1, h2, h3, h4, h5, h6, p {
   list-style: none;
 }
 
-
 /* Header */
 
 /* Лого */
@@ -58,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .logo {
-  color: #000000;
+  color: var(--logo-black);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -72,7 +77,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .logo-white {
   color: var(--primari-white-color);
-  }
+}
 
 /* Site nav */
 
@@ -84,19 +89,17 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 25px;
 }
 
-.page-header .main-nav{
+.page-header .main-nav {
   display: flex;
   align-items: center;
-  
 }
 
-.site-nav{
+.site-nav {
   display: flex;
   margin-left: 93px;
-  
 }
 
-.site-nav .item:not(:last-child){
+.site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -105,15 +108,14 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
   padding-top: 7px;
   padding-bottom: 7px;
-  }
+}
 
-
-.contacts-nav{
+.contacts-nav {
   display: flex;
 }
 
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .site-nav .link {
@@ -141,27 +143,21 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--accent-color);
 }
 
-.contacts-nav .item:not(:last-child){
+.contacts-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
 /* Аналогичные варианты предыдущего селектора */
 /* .contacts-nav li:not(:last-child){
   margin-right: 50px; */
-}
+
 /* .contacts-nav .item + .item {
   margin-right: 50px;
 } */
 
-
 /* Стили для index.html */
 
 /* Section */
-
-.section.padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .section .section-title {
   margin-bottom: 50px;
@@ -179,7 +175,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  }
+}
 
 /* .section .text {
   
@@ -187,10 +183,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Hero */
 .hero {
-padding: 200px 452px;
-background-color: var(--secondary-background-color-dark);
-text-align: center;
-margin-bottom: 94px;
+  padding: 200px 452px;
+  background-color: var(--secondary-background-color-dark);
+  text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -201,12 +197,12 @@ margin-bottom: 94px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   font-weight: 900;
-  }
+}
 
 .button-hero {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
-  font-weight:700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   /* text-align:: center; */
@@ -218,9 +214,9 @@ margin-bottom: 94px;
 
 .section .feature-list {
   display: flex;
- }
+}
 
- .feature-item:not(:last-child){
+.feature-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -229,7 +225,6 @@ margin-bottom: 94px;
 }
 
 .feature-list .title {
-  
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -246,11 +241,11 @@ margin-bottom: 94px;
   margin-bottom: 67px;
 }
 
-.section .activities-list{
+.section .activities-list {
   display: flex;
 }
 
-.activities-item:not(:last-child){
+.activities-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -265,9 +260,9 @@ margin-bottom: 94px;
 
 .team-list {
   display: flex;
- }
+}
 
- .team-item:not(:last-child){
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -277,7 +272,6 @@ margin-bottom: 94px;
 
 .team-list .title {
   text-align: center;
-
 }
 
 .team-list .text {
@@ -294,7 +288,6 @@ margin-bottom: 94px;
 
   background-color: var(--secondary-background-color-dark);
 }
-
 
 .contact-list .adress {
   color: var(--primari-white-color);
@@ -314,9 +307,8 @@ margin-bottom: 94px;
   color: var(--accent-color);
 }
 
-
-.contact-list .link, .contact-list .adress
-{
+.contact-list .link,
+.contact-list .adress {
   font-style: normal;
   text-decoration: none;
 }
@@ -325,7 +317,7 @@ margin-bottom: 94px;
   margin-bottom: 9px;
 }
 
-.contact-list{
+.contact-list {
   margin-top: 20px;
 }
 
@@ -336,12 +328,10 @@ margin-bottom: 94px;
 .button.list {
   display: flex;
   justify-content: center;
-  }
-
+}
 
 .btn-item:not(:last-child) {
   margin-right: 8px;
-
 }
 
 .button {
@@ -357,11 +347,10 @@ margin-bottom: 94px;
   color: var(--title-text-color);
   background-color: var(--secondary-background-color-light);
   font-family: inherit;
-  }
+}
 
-
-.button.primary:hover, .button.primary:focus
- {
+.button.primary:hover,
+.button.primary:focus {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -382,7 +371,6 @@ margin-bottom: 94px;
   margin-bottom: 34px;
 }
 
-
 /* List of our works */
 
 .section.cards {
@@ -401,14 +389,13 @@ margin-bottom: 94px;
   margin-bottom: 30px;
 }
 
-.cards-list .cards-item:nth-child(3n+3){
-margin-right: 0px;
+.cards-list .cards-item:nth-child(3n + 3) {
+  margin-right: 0px;
 }
 
-.cards-list .cards-item:nth-last-child(-n + 3){
-margin-bottom: 0px;
+.cards-list .cards-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
-
 
 .img-card {
   margin-bottom: 20px;
@@ -421,18 +408,17 @@ margin-bottom: 0px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  }
+}
 
-  .cards-item {
-    padding-bottom: 20px;
-  }
+.cards-item {
+  padding-bottom: 20px;
+}
 
 .cards .text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
 }
-
 
 /* Убирает подчеркивание с ссылок */
 .cards a {
