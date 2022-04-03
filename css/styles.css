@@ -47,6 +47,11 @@ p {
   margin-bottom: 0px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .list {
   padding: 0px;
   margin: 0px;
@@ -386,7 +391,8 @@ p {
 
 .cards-list .cards-item {
   /* width: 370px; */
-  width: calc((100% - 60px) / 3);
+  /* вместо width правильнее flex-basis */
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -405,7 +411,7 @@ p {
   margin-bottom: 30px;
 } */
 
-.img-card {
+.card-thumbs {
   margin-bottom: 20px;
 }
 
@@ -414,6 +420,7 @@ p {
 
   color: var(--title-text-color);
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
 }
