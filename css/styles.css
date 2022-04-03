@@ -393,6 +393,8 @@ img {
   /* width: 370px; */
   /* вместо width правильнее flex-basis */
   flex-basis: calc((100% - 60px) / 3);
+  /* Аналогично предыдущей формуле */
+  /* flex-basis: calc(100% / 3 - 30px); */
   margin-right: 30px;
   margin-bottom: 30px;
 }
