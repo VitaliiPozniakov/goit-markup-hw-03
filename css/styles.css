@@ -7,6 +7,8 @@
   --secondary-background-color-dark: #2f303a;
   --secondary-background-color-light: #f5f4fa;
   --logo-black: #000000;
+  --border-header-color: rgba(236, 236, 236, 100%);
+  --border-cards-color: rgba(238, 238, 238, 100%);
 }
 
 /* Палитра:
@@ -64,6 +66,7 @@ img {
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Лого */
@@ -413,8 +416,14 @@ img {
   margin-bottom: 30px;
 } */
 
-.card-thumbs {
-  margin-bottom: 20px;
+.card-content {
+  padding-top: 20px;
+}
+
+.card-border {
+  border-bottom: 1px solid var(--border-cards-color);
+  border-left: 1px solid var(--border-cards-color);
+  border-right: 1px solid var(--border-cards-color);
 }
 
 .cards-item .title {
