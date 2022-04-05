@@ -225,6 +225,10 @@ img {
 
 /* Features */
 
+.title-without-margin {
+  margin: 0px;
+}
+
 .section .feature-list {
   display: flex;
 }
